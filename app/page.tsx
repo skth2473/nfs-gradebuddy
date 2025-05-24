@@ -95,7 +95,7 @@ export default function HomePage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
           style={{
-            backgroundImage: "url('/placeholder.svg?height=800&width=1200')",
+            backgroundImage: "url('/public/Gb.png')",
           }}
         ></div>
 
@@ -307,12 +307,14 @@ export default function HomePage() {
                       </Link>
                     </Button>
                     <Button
+                      asChild
                       size="lg"
-                      variant="outline"
-                      className="border-green-500/50 text-green-300 hover:bg-green-500/10"
+                      className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700"
                     >
-                      <Users className="mr-2 h-5 w-5" />
-                      Join Group
+                      <Link href="">
+                        <BookOpen className="mr-2 h-5 w-5" />
+                        Join Community
+                      </Link>
                     </Button>
                   </div>
                 </div>
