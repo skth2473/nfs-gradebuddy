@@ -83,15 +83,14 @@ export default function OneTwentyDaysFullStack() {
     // Deployment Phase (Days 101-120)
     {
       day: 101,
-      title: "Deployment Basics",
-      topics: ["Git", "GitHub", "Hosting Platforms"],\
-      youtubePlaylist: "https://youtube.com/playlist?list=PLgUwDviBIf  \"Hosting Platforms\"],
+      title: "Deployment Strategies",
+      topics: ["Hosting", "CI/CD", "Monitoring"],
       youtubePlaylist: "https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nfk2TqFBiP",
       practiceSheet: "https://docs.google.com/spreadsheets/d/1example101",
       notes: "https://drive.google.com/file/d/1example101",
       phase: 'deployment',
       completed: false
-    },
+    }, 
     // Add more days as needed...
   ]
 
