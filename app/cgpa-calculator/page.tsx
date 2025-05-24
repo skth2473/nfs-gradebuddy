@@ -123,7 +123,14 @@ Generated on: ${new Date().toLocaleString()}
                   Home
                 </Link>
               </Button>
-              <h1 className="text-2xl font-bold text-white">📊 CGPA Calculator</h1>
+              <div className="flex items-center space-x-3">
+                <img
+                  src="/placeholder.svg?height=32&width=32"
+                  alt="NFS Logo"
+                  className="w-8 h-8 rounded-lg object-cover"
+                />
+                <h1 className="text-2xl font-bold text-white">📊 CGPA Calculator</h1>
+              </div>
             </div>
           </div>
         </div>

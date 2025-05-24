@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -26,9 +25,12 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-                <BookOpen className="h-6 w-6 text-white" />
-              </div>
+              {/* Logo Image */}
+              <img
+                src="/placeholder.svg?height=40&width=40"
+                alt="NFS Logo"
+                className="w-10 h-10 rounded-lg object-cover"
+              />
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                   NFS
@@ -89,8 +91,20 @@ export default function HomePage() {
       </section>
 
       {/* GradeBuddy Section */}
-      <section id="gradebuddy" className="py-16 px-4 bg-slate-800/50">
-        <div className="container mx-auto">
+      <section id="gradebuddy" className="py-16 px-4 bg-slate-800/50 relative">
+        {/* Background Image with 40% opacity */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
+          style={{
+            backgroundImage: "url('/placeholder.svg?height=800&width=1200')",
+          }}
+        ></div>
+
+        {/* Overlay to ensure content readability */}
+        <div className="absolute inset-0 bg-slate-800/60"></div>
+
+        {/* Content */}
+        <div className="container mx-auto relative z-10">
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-green-500/20 text-green-300 border-green-500/30">🧮 Academic Calculator</Badge>
             <h3 className="text-4xl font-bold text-white mb-4">GradeBuddy</h3>
@@ -100,6 +114,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {/* Calculator cards remain the same */}
             <Card className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-slate-800/80 border-slate-700 backdrop-blur-sm">
               <CardHeader className="text-center pb-4">
                 <div className="mx-auto w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-500/30 transition-colors">
@@ -594,7 +609,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-gray-400">
-            <p>© {new Date().getFullYear()} NFS - Notes for Study. All rights reserved. Built with ❤️ by <a href="https://www.linkedin.com/in/sarthak-kumar-thakur-097498231/">Sarthak</a></p>
+            <p>© {new Date().getFullYear()} NFS - Notes for Study. All rights reserved. Built with ❤️ by Ashish</p>
           </div>
         </div>
       </footer>

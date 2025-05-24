@@ -138,7 +138,14 @@ Generated on: ${new Date().toLocaleString()}
                   Home
                 </Link>
               </Button>
-              <h1 className="text-2xl font-bold text-white">🧮 SGPA Calculator</h1>
+              <div className="flex items-center space-x-3">
+                <img
+                  src="/placeholder.svg?height=32&width=32"
+                  alt="NFS Logo"
+                  className="w-8 h-8 rounded-lg object-cover"
+                />
+                <h1 className="text-2xl font-bold text-white">🧮 SGPA Calculator</h1>
+              </div>
             </div>
           </div>
         </div>
@@ -207,7 +214,7 @@ Generated on: ${new Date().toLocaleString()}
                     <Label htmlFor={`grade-${subject.id}`} className="text-gray-300">
                       Grade *
                     </Label>
-                    <Select value={subject.grade} onValueChange={(value) => updateSubject(subject.id, "grade", value)}>
+                    <Select value={subject.grade} onValueChange={(value: string | number) => updateSubject(subject.id, "grade", value)}>
                       <SelectTrigger className="bg-slate-600/50 border-slate-500 text-white">
                         <SelectValue placeholder="Select grade" />
                       </SelectTrigger>
