@@ -27,7 +27,7 @@ export default function HomePage() {
             <div className="flex items-center space-x-3">
               {/* Logo Image */}
               <img
-                src="/placeholder.svg?height=40&width=40"
+                src="/public/NFS.png"
                 alt="NFS Logo"
                 className="w-10 h-10 rounded-lg object-cover"
               />
@@ -81,8 +81,7 @@ export default function HomePage() {
             </Button>
             <Button
               size="lg"
-              variant="outline"
-              className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 px-8 py-3"
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3"
             >
               Explore Courses
             </Button>
@@ -206,7 +205,7 @@ export default function HomePage() {
                   <ul className="space-y-3 text-gray-300 mb-6">
                     <li className="flex items-center">
                       <Star className="h-5 w-5 text-yellow-400 mr-2" />
-                      Data Structures & Algorithms Mastery
+                      Data Structures & Algorithms 
                     </li>
                     <li className="flex items-center">
                       <Star className="h-5 w-5 text-yellow-400 mr-2" />
@@ -214,11 +213,11 @@ export default function HomePage() {
                     </li>
                     <li className="flex items-center">
                       <Star className="h-5 w-5 text-yellow-400 mr-2" />
-                      Mock Interview Sessions
+                      Aptitude
                     </li>
                     <li className="flex items-center">
                       <Star className="h-5 w-5 text-yellow-400 mr-2" />
-                      Industry Expert Mentorship
+                      Placement Preparation
                     </li>
                   </ul>
                   <div className="flex gap-4">
@@ -233,12 +232,14 @@ export default function HomePage() {
                       </Link>
                     </Button>
                     <Button
+                      asChild
                       size="lg"
-                      variant="outline"
-                      className="border-blue-500/50 text-blue-300 hover:bg-blue-500/10"
+                      className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
                     >
-                      <Users className="mr-2 h-5 w-5" />
-                      Join Group
+                      <Link href="">
+                        <BookOpen className="mr-2 h-5 w-5" />
+                        Join Community
+                      </Link>
                     </Button>
                   </div>
                 </div>
@@ -246,7 +247,7 @@ export default function HomePage() {
                   <div className="w-32 h-32 mx-auto bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mb-4">
                     <Code className="h-16 w-16 text-white" />
                   </div>
-                  <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30">500+ Students Placed</Badge>
+                  <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30">Exclusive for 2026 batch</Badge>
                 </div>
               </div>
             </CardContent>
@@ -272,7 +273,7 @@ export default function HomePage() {
                   <div className="w-32 h-32 mx-auto bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mb-4">
                     <Trophy className="h-16 w-16 text-white" />
                   </div>
-                  <Badge className="bg-green-500/20 text-green-300 border-green-500/30">AIR 1-100 Achievers</Badge>
+                  <Badge className="bg-green-500/20 text-green-300 border-green-500/30">2027</Badge>
                 </div>
                 <div>
                   <h4 className="text-2xl font-bold text-white mb-4">GATE Success Program</h4>
@@ -328,7 +329,8 @@ export default function HomePage() {
             <Badge className="mb-4 bg-purple-500/20 text-purple-300 border-purple-500/30">💼 Career Support</Badge>
             <h3 className="text-4xl font-bold text-white mb-4">Internship & Placement</h3>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Get placed in top companies with our dedicated placement assistance and industry connections
+              Dedicated support for internships and placements with expert guidance and resources to help you land your
+              dream job or internship
             </p>
           </div>
 
@@ -340,7 +342,7 @@ export default function HomePage() {
                   <ul className="space-y-3 text-gray-300 mb-6">
                     <li className="flex items-center">
                       <Star className="h-5 w-5 text-yellow-400 mr-2" />
-                      Resume Building & Optimization
+                      Opportunity Alerts
                     </li>
                     <li className="flex items-center">
                       <Star className="h-5 w-5 text-yellow-400 mr-2" />
@@ -352,7 +354,7 @@ export default function HomePage() {
                     </li>
                     <li className="flex items-center">
                       <Star className="h-5 w-5 text-yellow-400 mr-2" />
-                      Salary Negotiation Tips
+                      Special Session by our Founder Ashish
                     </li>
                   </ul>
                   <Button
@@ -367,7 +369,7 @@ export default function HomePage() {
                   <div className="w-32 h-32 mx-auto bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mb-4">
                     <Briefcase className="h-16 w-16 text-white" />
                   </div>
-                  <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">95% Placement Rate</Badge>
+                  <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">Build Your Future</Badge>
                 </div>
               </div>
             </CardContent>
@@ -480,9 +482,8 @@ export default function HomePage() {
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="text-center">
                   <div className="w-48 h-48 mx-auto bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center mb-6">
-                    <GraduationCap className="h-24 w-24 text-white" />
+                    <img src="/public/Ashish.jpg" alt="Ashish Bhai" />
                   </div>
-                  <Badge className="bg-indigo-500/20 text-indigo-300 border-indigo-500/30">CSE 3rd Year Student</Badge>
                 </div>
                 <div>
                   <h4 className="text-3xl font-bold text-white mb-6">Ashish Kumar</h4>
@@ -523,25 +524,35 @@ export default function HomePage() {
 
       {/* Contact Section */}
       <section id="contact" className="py-16 px-4 bg-slate-800/50">
-        <div className="container mx-auto text-center">
-          <Badge className="mb-4 bg-pink-500/20 text-pink-300 border-pink-500/30">📞 Get in Touch</Badge>
-          <h3 className="text-4xl font-bold text-white mb-6">Contact Us</h3>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Have questions or need guidance? We're here to help you succeed in your academic journey.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700"
-            >
-              Send Message
-            </Button>
-            <Button size="lg" variant="outline" className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10">
-              Join Discord
-            </Button>
-          </div>
-        </div>
-      </section>
+  <div className="container mx-auto text-center">
+    <img src="public\NFS.png" alt="NFS" className="mx-auto mb-6 w-full max-w-md rounded-lg shadow-lg" />
+    <h3 className="text-4xl font-bold text-white mb-6">Contact Us</h3>
+    <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+      Have questions or need guidance? We're here to help you succeed in your academic journey.
+    </p>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <Button
+        size="lg"
+        className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700"
+      >
+        <a href="whatsapp.com">
+          
+          Send Message
+          </a>
+      </Button>
+      <Button
+        size="lg"
+        className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700"
+      >
+        <a href="discord.gg">
+          
+          Join Discord Community
+          </a>
+      </Button>
+    </div>
+  </div>
+</section>
+
 
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-12 px-4 border-t border-slate-700">
@@ -609,7 +620,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-gray-400">
-            <p>© {new Date().getFullYear()} NFS - Notes for Study. All rights reserved. Built with ❤️ by Ashish</p>
+            <p>© {new Date().getFullYear()} NFS - Notes for Study. All rights reserved. Built with ❤️ by <a href="https://www.linkedin.com/in/sarthak-kumar-thakur-097498231/">Sarthak Kumar Thakur</a></p>
           </div>
         </div>
       </footer>
