@@ -298,3 +298,16 @@ Generated on: ${new Date().toLocaleString()}
     </div>
   )
 }
+
+// <Button
+//   asChild
+//   variant="outline"
+//   className={`${
+//     isActive ? "bg-green-100 text-green-600 border-green-500" : "bg-white text-muted-foreground border-transparent hover:border-gray-300"
+//   }`}
+// >
+//   <Link href={link} target="_blank" rel="noopener noreferrer">
+//     <Icon className="h-4 w-4 mr-2" />
+//     {label}
+//   </Link>
+// </Button>
