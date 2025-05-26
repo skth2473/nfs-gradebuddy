@@ -387,7 +387,7 @@ export default function HomePage() {
                     <div className="w-32 h-32 mx-auto bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mb-4">
                       <Briefcase className="h-16 w-16 text-white" />
                     </div>
-                    <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">95% Placement Rate</Badge>
+                    <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">Notification at Finger Tips</Badge>
                   </div>
                 </div>
               </CardContent>
@@ -396,7 +396,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About Section - Meet the Trio */}
+      About Section - Meet the Trio
       <section id="about" className="py-16 px-4 bg-slate-800/50">
         <div className="container mx-auto">
           <div className="text-center mb-12">
@@ -412,7 +412,7 @@ export default function HomePage() {
             <Card className="bg-slate-800/80 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
                 <img
-                  src="/placeholder.svg?height=150&width=150"
+                  src="Ashish.jpg"
                   alt="Aryaman"
                   className="w-32 h-32 mx-auto rounded-full object-cover mb-6"
                 />
@@ -430,7 +430,7 @@ export default function HomePage() {
             <Card className="bg-slate-800/80 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
                 <img
-                  src="/placeholder.svg?height=150&width=150"
+                  src="vaibhav.jpg"
                   alt="Vaibhav"
                   className="w-32 h-32 mx-auto rounded-full object-cover mb-6"
                 />
@@ -448,7 +448,7 @@ export default function HomePage() {
             <Card className="bg-slate-800/80 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
                 <img
-                  src="/placeholder.svg?height=150&width=150"
+                  src="adith.jpg"
                   alt="Adith"
                   className="w-32 h-32 mx-auto rounded-full object-cover mb-6"
                 />
@@ -558,7 +558,7 @@ export default function HomePage() {
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-gray-400">
             <p>
               © {new Date().getFullYear()} NFSxRFP - Notes for Study x Road for Placement. All rights reserved. -
-              Developed with ❤️ By Sarthak
+              Developed with ❤️ By <a href="https://www.linkedin.com/in/sarthak-kumar-thakur-097498231/">Sarthak Thakur</a>
             </p>
           </div>
         </div>
