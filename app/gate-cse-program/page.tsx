@@ -94,7 +94,7 @@ export default function GateCSEProgram() {
                 <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg flex items-center justify-center">
                   <Trophy className="h-5 w-5 text-white" />
                 </div>
-                <h1 className="text-2xl font-bold text-white">GATE CSE Preparation</h1>
+                <h1 className="text-2xl font-bold text-white">GATE CSE Resources</h1>
               </div>
             </div>
           </div>
@@ -110,10 +110,10 @@ export default function GateCSEProgram() {
                 <div>
                   <CardTitle className="text-white flex items-center">
                     <Target className="h-6 w-6 mr-2 text-green-400" />
-                    GATE CSE Success Program
+                    GATE CSE Resource Hub
                   </CardTitle>
                   <CardDescription className="text-gray-300">
-                    Comprehensive GATE Computer Science preparation with expert guidance
+                    Curated resources for GATE Computer Science preparation
                   </CardDescription>
                 </div>
                 <Badge className="bg-green-500/20 text-green-300 border-green-500/30">
@@ -124,7 +124,7 @@ export default function GateCSEProgram() {
             <CardContent>
               <div className="space-y-4">
                 <Progress value={progressPercentage} className="h-3" />
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
                   <div className="bg-slate-700/50 p-4 rounded-lg">
                     <div className="text-2xl font-bold text-green-400">{completedDays.length}</div>
                     <div className="text-sm text-gray-300">Days Completed</div>
@@ -136,10 +136,6 @@ export default function GateCSEProgram() {
                   <div className="bg-slate-700/50 p-4 rounded-lg">
                     <div className="text-2xl font-bold text-purple-400">{Math.round(progressPercentage)}%</div>
                     <div className="text-sm text-gray-300">Progress</div>
-                  </div>
-                  <div className="bg-slate-700/50 p-4 rounded-lg">
-                    <div className="text-2xl font-bold text-orange-400">AIR 1-100</div>
-                    <div className="text-sm text-gray-300">Achievers</div>
                   </div>
                 </div>
               </div>
@@ -318,20 +314,20 @@ export default function GateCSEProgram() {
           </div>
 
           {/* Join Community */}
-          <Card className="mt-8 bg-gradient-to-r from-green-500/10 to-blue-500/10 border-green-500/30">
+          <Card className="mt-8 bg-gradient-to-r from-green-500/1 to-blue-500/1 border-green-500/3">
             <CardContent className="p-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">🏆 Join GATE CSE Success Community!</h3>
               <p className="text-gray-300 mb-6">
                 "Success is where preparation and opportunity meet. Start your GATE journey today!"
               </p>
               <div className="flex justify-center space-x-4 mb-6">
-                <Badge className="bg-green-500/20 text-green-300 border-green-500/30">AIR 1-100 Achievers</Badge>
-                <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30">Expert Faculty</Badge>
-                <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">Mock Tests</Badge>
+                <Badge className="bg-green-500/20 text-green-300 border-green-500/30">Resource Sharing</Badge>
+                <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30">Expert Guidance</Badge>
+                <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">Community Support</Badge>
               </div>
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700"
+                className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white"
               >
                 <Users className="mr-2 h-5 w-5" />
                 Join GATE CSE Group

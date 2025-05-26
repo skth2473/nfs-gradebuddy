@@ -8,50 +8,10 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Progress } from "@/components/ui/progress"
 import { Home, Calendar, BookOpen, ExternalLink, CheckCircle, Target, Zap, FileText } from "lucide-react"
 import Link from "next/link"
-
-interface DayPlan {
-  day: number
-  title: string
-  topics: string[]
-  youtubePlaylist: string
-  practiceSheet: string
-  notes: string
-  completed: boolean
-}
+import { dsaPlan } from "@/data/dsa-plan"
 
 export default function SixtyDaysDSA() {
   const [completedDays, setCompletedDays] = useState<number[]>([])
-
-  const dsaPlan: DayPlan[] = [
-    {
-      day: 1,
-      title: "Introduction to DSA & Time Complexity",
-      topics: ["What is DSA?", "Time & Space Complexity", "Big O Notation"],
-      youtubePlaylist: "https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nfk2TqFBiP",
-      practiceSheet: "https://docs.google.com/spreadsheets/d/1example1",
-      notes: "https://drive.google.com/file/d/1example1",
-      completed: false,
-    },
-    {
-      day: 2,
-      title: "Arrays - Basics",
-      topics: ["Array Declaration", "Traversal", "Insertion & Deletion"],
-      youtubePlaylist: "https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nfk2TqFBiP",
-      practiceSheet: "https://docs.google.com/spreadsheets/d/1example2",
-      notes: "https://drive.google.com/file/d/1example2",
-      completed: false,
-    },
-    {
-      day: 3,
-      title: "Arrays - Problems",
-      topics: ["Two Sum", "Maximum Subarray", "Rotate Array"],
-      youtubePlaylist: "https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nfk2TqFBiP",
-      practiceSheet: "https://docs.google.com/spreadsheets/d/1example3",
-      notes: "https://drive.google.com/file/d/1example3",
-      completed: false,
-    },
-    // Add more days as needed...
-  ]
 
   const toggleDayCompletion = (day: number) => {
     setCompletedDays((prev) => (prev.includes(day) ? prev.filter((d) => d !== day) : [...prev, day]))
@@ -173,7 +133,11 @@ export default function SixtyDaysDSA() {
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <Button asChild variant="outline" className="border-red-500/50 text-red-300 hover:bg-red-500/10">
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
+                    >
                       <Link href={dayPlan.youtubePlaylist} target="_blank">
                         <ExternalLink className="h-4 w-4 mr-2" />
                         YouTube Playlist
@@ -182,14 +146,18 @@ export default function SixtyDaysDSA() {
                     <Button
                       asChild
                       variant="outline"
-                      className="border-orange-500/50 text-orange-300 hover:bg-orange-500/10"
+                      className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                     >
                       <Link href={dayPlan.practiceSheet} target="_blank">
                         <FileText className="h-4 w-4 mr-2" />
                         Practice Sheet
                       </Link>
                     </Button>
-                    <Button asChild variant="outline" className="border-blue-500/50 text-blue-300 hover:bg-blue-500/10">
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
+                    >
                       <Link href={dayPlan.notes} target="_blank">
                         <BookOpen className="h-4 w-4 mr-2" />
                         Notes

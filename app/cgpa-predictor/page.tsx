@@ -217,7 +217,7 @@ export default function CGPAPredictor() {
                 <Button
                   onClick={resetCalculator}
                   variant="outline"
-                  className="border-slate-600 text-gray-300 hover:bg-slate-700"
+                  className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                 >
                   Reset
                 </Button>

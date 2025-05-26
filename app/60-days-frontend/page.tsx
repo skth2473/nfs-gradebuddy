@@ -8,50 +8,10 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Progress } from "@/components/ui/progress"
 import { Home, Calendar, BookOpen, ExternalLink, CheckCircle, Code, Target, FileText, Palette } from "lucide-react"
 import Link from "next/link"
-
-interface DayPlan {
-  day: number
-  title: string
-  topics: string[]
-  youtubePlaylist: string
-  practiceSheet: string
-  notes: string
-  completed: boolean
-}
+import { frontendPlan } from "@/data/frontend-plan"
 
 export default function SixtyDaysFrontend() {
   const [completedDays, setCompletedDays] = useState<number[]>([])
-
-  const frontendPlan: DayPlan[] = [
-    {
-      day: 1,
-      title: "HTML Fundamentals",
-      topics: ["HTML Structure", "Tags & Elements", "Semantic HTML"],
-      youtubePlaylist: "https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nfk2TqFBiP",
-      practiceSheet: "https://docs.google.com/spreadsheets/d/1example1",
-      notes: "https://drive.google.com/file/d/1example1",
-      completed: false,
-    },
-    {
-      day: 2,
-      title: "HTML Forms & Media",
-      topics: ["Forms", "Input Types", "Audio & Video", "Images"],
-      youtubePlaylist: "https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nfk2TqFBiP",
-      practiceSheet: "https://docs.google.com/spreadsheets/d/1example2",
-      notes: "https://drive.google.com/file/d/1example2",
-      completed: false,
-    },
-    {
-      day: 3,
-      title: "CSS Basics",
-      topics: ["CSS Syntax", "Selectors", "Properties", "Box Model"],
-      youtubePlaylist: "https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nfk2TqFBiP",
-      practiceSheet: "https://docs.google.com/spreadsheets/d/1example3",
-      notes: "https://drive.google.com/file/d/1example3",
-      completed: false,
-    },
-    // Add more days as needed...
-  ]
 
   const toggleDayCompletion = (day: number) => {
     setCompletedDays((prev) => (prev.includes(day) ? prev.filter((d) => d !== day) : [...prev, day]))
@@ -209,7 +169,11 @@ export default function SixtyDaysFrontend() {
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <Button asChild variant="outline" className="border-blue-500/50 text-blue-300 hover:bg-blue-500/10">
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
+                    >
                       <Link href={dayPlan.youtubePlaylist} target="_blank">
                         <ExternalLink className="h-4 w-4 mr-2" />
                         Video Tutorials
@@ -218,7 +182,7 @@ export default function SixtyDaysFrontend() {
                     <Button
                       asChild
                       variant="outline"
-                      className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10"
+                      className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                     >
                       <Link href={dayPlan.practiceSheet} target="_blank">
                         <FileText className="h-4 w-4 mr-2" />
@@ -228,7 +192,7 @@ export default function SixtyDaysFrontend() {
                     <Button
                       asChild
                       variant="outline"
-                      className="border-green-500/50 text-green-300 hover:bg-green-500/10"
+                      className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                     >
                       <Link href={dayPlan.notes} target="_blank">
                         <BookOpen className="h-4 w-4 mr-2" />

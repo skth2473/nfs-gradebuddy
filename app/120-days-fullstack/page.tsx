@@ -45,8 +45,8 @@ export default function OneTwentyDaysFullStack() {
       youtubePlaylist: "https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nfk2TqFBiP",
       practiceSheet: "https://docs.google.com/spreadsheets/d/1example1",
       notes: "https://drive.google.com/file/d/1example1",
-      phase: 'frontend',
-      completed: false
+      phase: "frontend",
+      completed: false,
     },
     {
       day: 2,
@@ -55,8 +55,8 @@ export default function OneTwentyDaysFullStack() {
       youtubePlaylist: "https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nfk2TqFBiP",
       practiceSheet: "https://docs.google.com/spreadsheets/d/1example2",
       notes: "https://drive.google.com/file/d/1example2",
-      phase: 'frontend',
-      completed: false
+      phase: "frontend",
+      completed: false,
     },
     // Backend Phase (Days 41-80)
     {
@@ -66,8 +66,8 @@ export default function OneTwentyDaysFullStack() {
       youtubePlaylist: "https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nfk2TqFBiP",
       practiceSheet: "https://docs.google.com/spreadsheets/d/1example41",
       notes: "https://drive.google.com/file/d/1example41",
-      phase: 'backend',
-      completed: false
+      phase: "backend",
+      completed: false,
     },
     // Database Phase (Days 81-100)
     {
@@ -77,8 +77,8 @@ export default function OneTwentyDaysFullStack() {
       youtubePlaylist: "https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nfk2TqFBiP",
       practiceSheet: "https://docs.google.com/spreadsheets/d/1example81",
       notes: "https://drive.google.com/file/d/1example81",
-      phase: 'database',
-      completed: false
+      phase: "database",
+      completed: false,
     },
     // Deployment Phase (Days 101-120)
     {
@@ -88,9 +88,9 @@ export default function OneTwentyDaysFullStack() {
       youtubePlaylist: "https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nfk2TqFBiP",
       practiceSheet: "https://docs.google.com/spreadsheets/d/1example101",
       notes: "https://drive.google.com/file/d/1example101",
-      phase: 'deployment',
-      completed: false
-    }, 
+      phase: "deployment",
+      completed: false,
+    },
     // Add more days as needed...
   ]
 
@@ -304,7 +304,7 @@ export default function OneTwentyDaysFullStack() {
                       <Button
                         asChild
                         variant="outline"
-                        className="border-green-500/50 text-green-300 hover:bg-green-500/10"
+                        className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                       >
                         <Link href={dayPlan.youtubePlaylist} target="_blank">
                           <ExternalLink className="h-4 w-4 mr-2" />
@@ -314,7 +314,7 @@ export default function OneTwentyDaysFullStack() {
                       <Button
                         asChild
                         variant="outline"
-                        className="border-blue-500/50 text-blue-300 hover:bg-blue-500/10"
+                        className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                       >
                         <Link href={dayPlan.practiceSheet} target="_blank">
                           <FileText className="h-4 w-4 mr-2" />
@@ -324,7 +324,7 @@ export default function OneTwentyDaysFullStack() {
                       <Button
                         asChild
                         variant="outline"
-                        className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10"
+                        className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                       >
                         <Link href={dayPlan.notes} target="_blank">
                           <BookOpen className="h-4 w-4 mr-2" />
@@ -396,7 +396,7 @@ export default function OneTwentyDaysFullStack() {
                           <Button
                             asChild
                             variant="outline"
-                            className="border-green-500/50 text-green-300 hover:bg-green-500/10"
+                            className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                           >
                             <Link href={dayPlan.youtubePlaylist} target="_blank">
                               <ExternalLink className="h-4 w-4 mr-2" />
@@ -406,7 +406,7 @@ export default function OneTwentyDaysFullStack() {
                           <Button
                             asChild
                             variant="outline"
-                            className="border-blue-500/50 text-blue-300 hover:bg-blue-500/10"
+                            className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                           >
                             <Link href={dayPlan.practiceSheet} target="_blank">
                               <FileText className="h-4 w-4 mr-2" />
@@ -416,7 +416,7 @@ export default function OneTwentyDaysFullStack() {
                           <Button
                             asChild
                             variant="outline"
-                            className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10"
+                            className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                           >
                             <Link href={dayPlan.notes} target="_blank">
                               <BookOpen className="h-4 w-4 mr-2" />

@@ -214,7 +214,10 @@ Generated on: ${new Date().toLocaleString()}
                     <Label htmlFor={`grade-${subject.id}`} className="text-gray-300">
                       Grade *
                     </Label>
-                    <Select value={subject.grade} onValueChange={(value: string | number) => updateSubject(subject.id, "grade", value)}>
+                    <Select
+                      value={subject.grade}
+                      onValueChange={(value: string | number) => updateSubject(subject.id, "grade", value)}
+                    >
                       <SelectTrigger className="bg-slate-600/50 border-slate-500 text-white">
                         <SelectValue placeholder="Select grade" />
                       </SelectTrigger>
@@ -246,7 +249,7 @@ Generated on: ${new Date().toLocaleString()}
                 <Button
                   onClick={addSubject}
                   variant="outline"
-                  className="border-slate-600 text-gray-300 hover:bg-slate-700"
+                  className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                 >
                   <Plus className="h-4 w-4 mr-2" />
                   Add Subject
@@ -260,7 +263,7 @@ Generated on: ${new Date().toLocaleString()}
                 <Button
                   onClick={resetCalculator}
                   variant="outline"
-                  className="border-slate-600 text-gray-300 hover:bg-slate-700"
+                  className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                 >
                   <RotateCcw className="h-4 w-4 mr-2" />
                   Reset
@@ -285,7 +288,7 @@ Generated on: ${new Date().toLocaleString()}
                   <Button
                     onClick={downloadResults}
                     variant="outline"
-                    className="border-slate-600 text-gray-300 hover:bg-slate-700"
+                    className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                   >
                     Download Result
                   </Button>
@@ -298,16 +301,3 @@ Generated on: ${new Date().toLocaleString()}
     </div>
   )
 }
-
-// <Button
-//   asChild
-//   variant="outline"
-//   className={`${
-//     isActive ? "bg-green-100 text-green-600 border-green-500" : "bg-white text-muted-foreground border-transparent hover:border-gray-300"
-//   }`}
-// >
-//   <Link href={link} target="_blank" rel="noopener noreferrer">
-//     <Icon className="h-4 w-4 mr-2" />
-//     {label}
-//   </Link>
-// </Button>

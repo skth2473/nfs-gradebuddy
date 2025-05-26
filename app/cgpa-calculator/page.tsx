@@ -230,7 +230,7 @@ Generated on: ${new Date().toLocaleString()}
                 <Button
                   onClick={addSemester}
                   variant="outline"
-                  className="border-slate-600 text-gray-300 hover:bg-slate-700"
+                  className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                 >
                   <Plus className="h-4 w-4 mr-2" />
                   Add Semester
@@ -244,7 +244,7 @@ Generated on: ${new Date().toLocaleString()}
                 <Button
                   onClick={resetCalculator}
                   variant="outline"
-                  className="border-slate-600 text-gray-300 hover:bg-slate-700"
+                  className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                 >
                   <RotateCcw className="h-4 w-4 mr-2" />
                   Reset
@@ -279,7 +279,7 @@ Generated on: ${new Date().toLocaleString()}
                   <Button
                     onClick={downloadResults}
                     variant="outline"
-                    className="border-slate-600 text-gray-300 hover:bg-slate-700"
+                    className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 bg-transparent"
                   >
                     Download Result
                   </Button>
