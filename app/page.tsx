@@ -32,7 +32,7 @@ export default function HomePage() {
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                   NFSxRFP
                 </h1>
-                <p className="text-xs text-gray-400">Notes for Study x Road for Placement</p>
+                <p className="text-xs text-gray-400">Notes for Study x Resource for Placement</p>
               </div>
             </div>
             <nav className="hidden md:flex space-x-8">
@@ -67,7 +67,7 @@ export default function HomePage() {
             <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">NFSxRFP</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Complete platform combining Notes for Study with Road for Placement - comprehensive notes, structured
+            Complete platform combining Notes for Study with Resource for Placement - comprehensive notes, structured
             courses, grade calculation tools, and career guidance for computer science students.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -241,7 +241,7 @@ export default function HomePage() {
       <section id="rfp" className="py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <Badge className="mb-4 bg-orange-500/20 text-orange-300 border-orange-500/30">🛣️ Road for Placement</Badge>
+            <Badge className="mb-4 bg-orange-500/20 text-orange-300 border-orange-500/30">🛣️ Resource for Placement</Badge>
             <h3 className="text-4xl font-bold text-white mb-4">RFP - Career Success</h3>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Complete roadmap for placement success with coding interviews, system design, and career guidance
@@ -396,8 +396,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      About Section - Meet the Trio
-      <section id="about" className="py-16 px-4 bg-slate-800/50">
+      {/* About Section - Meet the Trio */}
+      {/* <section id="about" className="py-16 px-4 bg-slate-800/50">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-indigo-500/20 text-indigo-300 border-indigo-500/30">👥 Meet the Trio</Badge>
@@ -405,11 +405,11 @@ export default function HomePage() {
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               The passionate team behind NFSxRFP, dedicated to empowering students in their academic and career journey
             </p>
-          </div>
+          </div> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"> */}
             {/* Aryaman */}
-            <Card className="bg-slate-800/80 border-slate-700 backdrop-blur-sm">
+            {/* <Card className="bg-slate-800/80 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
                 <img
                   src="Ashish.jpg"
@@ -424,10 +424,10 @@ export default function HomePage() {
                   around impactful initiatives.
                 </p>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Vaibhav */}
-            <Card className="bg-slate-800/80 border-slate-700 backdrop-blur-sm">
+            {/* <Card className="bg-slate-800/80 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
                 <img
                   src="vaibhav.jpg"
@@ -445,25 +445,25 @@ export default function HomePage() {
             </Card>
 
             {/* Adith */}
-            <Card className="bg-slate-800/80 border-slate-700 backdrop-blur-sm">
-              <CardContent className="p-8 text-center">
-                <img
-                  src="adith.jpg"
-                  alt="Adith"
-                  className="w-32 h-32 mx-auto rounded-full object-cover mb-6"
-                />
-                <h4 className="text-2xl font-bold text-white mb-2">Adith</h4>
-                <p className="text-green-400 mb-4 font-semibold">Co-Founder & Tech Lead</p>
-                <p className="text-gray-300 leading-relaxed">
+            {/* <Card className="bg-slate-800/80 border-slate-700 backdrop-blur-sm"> */}
+ {/* </Card>             <CardContent className="p-8 text-center"> */}
+                {/* <img */}
+                  {/* src="adith.jpg" */}
+                  {/* alt="Adith" */}
+                  {/* className="w-32 h-32 mx-auto rounded-full object-cover mb-6" */}
+                {/* /> */}
+                {/* <h4 className="text-2xl font-bold text-white mb-2">Adith</h4> */}
+                {/* <p className="text-green-400 mb-4 font-semibold">Co-Founder & Tech Lead</p> */} 
+                {/* <p className="text-gray-300 leading-relaxed">
                   Handling Code2Crack with confidence and clarity, Adith is the front-facing tech communicator. Whether
                   it's mentoring, managing sessions, or interacting with people, he makes sure the tech meets the
                   audience where they are — with clarity and impact.
                 </p>
-              </CardContent>
-            </Card>
+              </CardContent> */}
+            {/* </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section id="contact" className="py-16 px-4">
@@ -557,7 +557,7 @@ export default function HomePage() {
           </div>
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-gray-400">
             <p>
-              © {new Date().getFullYear()} NFSxRFP - Notes for Study x Road for Placement. All rights reserved. -
+              © {new Date().getFullYear()} NFSxRFP - Notes for Study x Resource for Placement. All rights reserved. -
               Developed with ❤️ By <a href="https://www.linkedin.com/in/sarthak-kumar-thakur-097498231/">Sarthak Thakur</a>
             </p>
           </div>
