@@ -24,7 +24,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <img
-                src="/placeholder.svg?height=40&width=40"
+                src="/NFS.png"
                 alt="NFSxRFP Logo"
                 className="w-10 h-10 rounded-lg object-cover"
               />
@@ -478,10 +478,12 @@ export default function HomePage() {
               size="lg"
               className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700"
             >
-              Send Message
+              <a href="https://wa.me/919835483030?text=Hello%20NFSxRFP%20Team,%20I%20have%20a%20query" target="_blank" rel="noopener noreferrer">
+                Send Message
+                </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10">
-              Join Discord
+            <Button size="lg" variant="outline" className="border-purple-5 text-purple-30 hover:bg-purple-5">
+              Whatsapp Channel
             </Button>
           </div>
         </div>
