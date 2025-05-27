@@ -76,8 +76,8 @@ export default function HomePage() {
               size="lg"
               className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3"
             >
-              <Link href="/nfs-courses">
-                Start Learning
+              <Link href="">
+                Join Community
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
